@@ -180,7 +180,8 @@ public class FacebookLogin extends Plugin {
             return;
         }
 
-        LoginManager.getInstance().logInWithReadPermissions(this.getActivity(), permissions);
+        //LoginManager.getInstance().logInWithReadPermissions(this.getActivity(), permissions);
+        LoginManager.getInstance().logIn(this.getActivity(), permissions);
 
         saveCall(call);
     }
